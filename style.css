@@ -1,0 +1,300 @@
+body {
+  background-color: #f8f9fa;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  position: sticky;
+  top: 0%;
+  margin-bottom: -6px;
+}
+.dropdown {
+  margin-left: 20px;
+}
+.dropdown-toggle {
+  font-size: larger;
+  margin: 0%;
+}
+.top-left {
+  margin-right: 20px;
+}
+.dp {
+  width: 40px;
+  height: 40px;
+}
+#icon {
+  align-items: center;
+  padding: 9px;
+  display: inline;
+  width: fit-content;
+  background-color: #f7f7f7;
+}
+
+#icon a {
+  color: #000000;
+}
+
+.menus {
+  background: white;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 5px;
+  margin-top: -10px;
+  padding: 5px;
+  padding-left: 20px;
+}
+.sidebar {
+  width: 15rem;
+  background: #ffffff;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.sidebar a {
+  color: #333;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  font-weight: 500;
+  border-radius: 5px;
+  margin-top: -3px;
+}
+
+.sidebar p {
+  margin-top: 5px;
+  margin-bottom: 2px;
+  color: #636363;
+}
+
+.sidebar a:hover {
+  background: #000000;
+  color: #ffffff;
+  border-radius: 10px;
+}
+
+.SearchTask:focus {
+  box-shadow: none;
+  outline: none;
+  border: 1px solid #e0e0e0;
+}
+
+.task-card {
+  border-radius: 10px;
+  padding: 1px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.card1 {
+  background-color: #f3f8ed;
+  background-image: url(./Asset\ 1.svg);
+  background-position: top right;
+  background-size: 38%;
+  background-repeat: no-repeat;
+}
+.card2 {
+  background-color: #e6f7ff;
+  background-image: url(./Asset\ 2.svg);
+  background-position: top right;
+  background-size: 38%;
+  background-repeat: no-repeat;
+}
+
+.card3 {
+  background-color: #e4e6ff;
+  background-image: url(./Asset\ 3.svg);
+  background-position: top right;
+  background-size: 38%;
+  background-repeat: no-repeat;
+}
+.card4 {
+  background-color: #ffdccd;
+  background-image: url(./Asset\ 4.svg);
+  background-position: top right;
+  background-size: 38%;
+  background-repeat: no-repeat;
+}
+.task-card h5 {
+  font-size: small;
+  color: #808080;
+  margin-bottom: 0;
+  margin-top: 5px;
+}
+.task-card p {
+  font-weight: lighter;
+  font-size: x-large;
+  color: #000000;
+}
+
+.img-card {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  background-color: #7faf44;
+  color: #ffffff;
+  align-items: center;
+  padding: 2%;
+}
+.img2 {
+  background-color: #868686;
+  padding: 2px;
+}
+.img3 {
+  background-color: #4955f7;
+}
+.img4 {
+  background-color: #fa5039;
+}
+.card {
+  background: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card h5 {
+  font-size: medium;
+  font-weight: bold;
+}
+.card p {
+  color: #a9a7a7;
+}
+.urgent-task .progress {
+  height: 10px;
+  border-radius: 5px;
+}
+.last {
+  text-align: right;
+  margin-right: -20px;
+}
+.list-group li {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+.chat-box img {
+  width: 50px;
+  height: 50px;
+  border-radius: 6%;
+}
+
+.chat-box p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.workspace-card {
+  background: white;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding-bottom: 0;
+}
+
+.container-fluid {
+  display: flex;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.right-sidebar {
+  width: 300px;
+  padding: 20px;
+  background: #ffffff;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+  border: none;
+  position: static;
+}
+
+.card-body p {
+  font-size: small;
+}
+.card-body h6 {
+  font-size: small;
+
+  border-radius: 2px;
+  padding: 2px 1px;
+}
+#Design {
+  color: #808080;
+  background: #ebebeb;
+  width: 6rem;
+}
+#business {
+  color: #00b10f;
+  background: #e3ffe4;
+  width: 6.4rem;
+}
+#personal {
+  color: #ff4aff;
+  background: #ffe6ff;
+  width: 6.3rem;
+}
+.card-body h4 {
+  font-size: medium;
+  font-weight: bold;
+}
+.card-body a {
+  margin: 0 auto;
+  font-size: medium;
+  width: 11rem;
+  padding: 3%;
+}
+
+.chats_bars {
+  margin-top: -20px;
+}
+
+.last p {
+  color: #7e7e7e;
+  font-size: small;
+}
+
+.person_chat {
+  font-size: medium;
+  font-weight: bolder;
+}
+.text-muted {
+}
+.person_chat span {
+  font-size: x-small;
+  font-weight: lighter;
+  color: #808080;
+  margin: 0px;
+  line-height: 0px;
+}
+
+.D {
+  border-radius: 5px;
+  width: 3rem;
+  height: 3rem;
+  background-color: #d4d4d4;
+  color: #989797;
+  text-align: center;
+  padding: 5%;
+  font-size: x-large;
+  margin-bottom: 0;
+  font-weight: bolder;
+}
+
+.workspace-card span {
+  font-size: 11px;
+  color: #808080;
+  font-weight: lighter;
+}
+.workspace-card p {
+  font-weight: bold;
+  margin-left: 7px;
+  margin-bottom: 2px;
+}
+
+#see {
+  font-size: small;
+  color: #acacac;
+  margin-left: 67%;
+}

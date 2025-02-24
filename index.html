@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taskboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="d-flex justify-content-between align-items-center p-3 bg-white shadow-sm">
+        <div class="dropdown">
+            <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-solid fa-circle-check"></i> Taskboard
+            </button>
+            <ul class="dropdown-menu ">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+
+            </ul>
+        </div>
+        <div class="input-group w-50">
+            <span class="input-group-text bg-white border-end-0">
+                <i class="fas fa-search SearchTask"></i>
+            </span>
+            <input type="search" class="form-control border-start-0 SearchTask" placeholder="Search Task">
+        </div>
+
+        <div class="top-left d-flex gap-1">
+            <button class="btn btn-dark"><img width="24" height="24"
+                    src="https://img.icons8.com/material-outlined/24/FFFFFF/sparkling.png" alt="sparkling" /> Create New
+                Task</button>
+            <div id="icon"><a href="#"><i class="fa-regular fa-bell"></i></a></div>
+            <img class="dp" src="https://randomuser.me/api/portraits/men/3.jpg" alt="">
+        </div>
+    </header>
+
+    <div class="container-fluid">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <div class="menus">
+                <p>Menu</p>
+                <a href="#" class="fw-bold"><i class="fas fa-home me-2"></i>Home</a>
+                <a href="#"><i class="fas fa-columns me-2"></i>Board</a>
+                <a href="#"><i class="fas fa-comments me-2"></i>Chat</a>
+                <a href="#"><i class="fas fa-copy me-2"></i>Template</a>
+                <a href="#"><i class="fas fa-calendar-alt me-2"></i>Calendar</a>
+                <p>Account</p>
+                <a href="#"><i class="fas fa-user me-2"></i>Account</a>
+                <a href="#"><i class="fas fa-cog me-2"></i>Settings</a>
+
+
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Upgrade Your Plan</h4>
+                    <p class="card-text">Upgrade Your Plan today to unlock a world of enhanced features</p>
+                    <a href="#" class="btn text-white  bg-dark">See plans</a>
+                </div>
+            </div>
+
+        </nav>
+
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <h6 class="mb-2 fw-bold">My Tasks</h6>
+            <div class="row g-3">
+
+                <div class="col-md-3">
+                    <div class="task-card card1">
+                        <div class="img-card"><img width="20" height="20"
+                                src="https://img.icons8.com/ios-glyphs/30/FFFFFF/activity-feed-2.png"
+                                alt="activity-feed-2" /> </div>
+                        <h5>Upcoming Task</h5>
+                        <p class="fw-bold ">3/34 Task</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="task-card card2 ">
+                        <div class="img-card img2"><img width="20" height="20"
+                                src="https://img.icons8.com/external-kiranshastry-lineal-kiranshastry/64/FFFFFF/external-calendar-interface-kiranshastry-lineal-kiranshastry.png"
+                                alt="external-calendar-interface-kiranshastry-lineal-kiranshastry" /></div>
+                        <h5>Upcoming Task</h5>
+                        <p class="fw-bold ">3/34 Task</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="task-card card3">
+                        <div class="img-card img3"><i class="fas fa-exclamation-circle"></i> </div>
+                        <h5>Overdue Task</h5>
+                        <p class="fw-bold ">10/34 Task</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="task-card card4">
+                        <div class="img-card img4"><i class="fas fa-stopwatch"></i> </div>
+                        <h5>Pending Task</h5>
+                        <p class="fw-bold ">2/34 Task</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- cards -->
+            <h6 class="mt-3 fw-bold">Recently Visited <span id="see">See more</span></h6>
+            <div class="row g-2">
+                <div class="col-md-4">
+                    <div class="card" style="width: 13rem; ">
+                        <img src="./netflix.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h6 id="Design">Design Project</h6>
+                            <h5 class="card-title">Website Design</h5>
+                            <p class="card-text">iscover a seamless blend of Creativity and efficiency.</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" style="width: 13rem;">
+                        <img src="./alpha coders.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h6 id="business">Business Projest</h6>
+                            <h5 class="card-title">SEO projrct 2024</h5>
+                            <p class="card-text">iscover a seamless blend of Creativity and efficiency.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" style="width: 13rem;">
+                        <img src="./facebook.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h6 id="personal">Personal Projest</h6>
+                            <h5 class="card-title">Plan in 2024</h5>
+                            <p class="card-text">iscover a seamless blend of Creativity and efficiency.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--  -->
+            <h6 class="mt-1 fw-bold">Workspace</h6>
+            <div class="row g-3">
+                <div class="col-md-4">
+                    <div class="workspace-card">
+                        <div class="d-flex">
+                            <h6 class="D gap-1">A</h6>
+                            <p><span>Website Design</span><br> Dstudio space</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="workspace-card">
+                        <div class="d-flex">
+                            <h6 class="D gap-1">C</h6>
+                            <p><span>SEO Project 2024</span><br> Dstudio space</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-4">
+                    <div class="workspace-card">
+                        <div class="d-flex">
+                            <h6 class="D gap-1">D</h6>
+                            <p><span>Plan in 2024</span><br> Dstudio space</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Right Sidebar -->
+        <aside class="right-sidebar">
+            <h6 class="mb-3">Urgently Task</h6>
+            <div class="urgent-task">
+                <div class="d-flex align-items-center mb-3">
+                    <h6 class="mb-0 me-2">Project 1</h6>
+                    <div class="progress flex-grow-1">
+                        <div class="progress-bar bg-dark" style="width: 100%"></div>
+                    </div>
+                </div>
+
+                <div class="d-flex align-items-center mb-3">
+                    <h6 class="mb-0 me-2">Project 2</h6>
+                    <div class="progress flex-grow-1">
+                        <div class="progress-bar bg-dark" style="width: 80%"></div>
+                    </div>
+                </div>
+
+                <div class="d-flex align-items-center mb-3">
+                    <h6 class="mb-0 me-2">Project 3</h6>
+                    <div class="progress flex-grow-1">
+                        <div class="progress-bar bg-dark" style="width: 60%"></div>
+                    </div>
+                </div>
+
+                <div class="d-flex align-items-center mb-2">
+                    <h6 class="mb-0 me-2">Project 4</h6>
+                    <div class="progress flex-grow-1">
+                        <div class="progress-bar bg-dark" style="width: 20%"></div>
+                    </div>
+                </div>
+
+                <div class="container text-center">
+                    <div class="row ">
+                        <div class="col last">
+                            <p> 0%</p>
+                        </div>
+                        <div class="col last">
+                            <p>50%</p>
+                        </div>
+                        <div class="col last">
+                            <p>100%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="chats_bars">
+                <h6 class="mt-2">New Chat</h6>
+                <div class="chat-box">
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <div class="d-flex align-items-center gap-3 ">
+                                <img src="https://randomuser.me/api/portraits/women/1.jpg" alt="">
+                                <p class="mb-0 person_chat">Annette Black - <small class="text-muted">06:00 pm</small>
+                                    <br><span>Hey have you seen the latest updates on our Project Design</span>
+                                </p>
+
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="d-flex align-items-center gap-3 ">
+                                <img src="https://randomuser.me/api/portraits/men/2.jpg" alt="">
+                                <p class="mb-0 person_chat">Alex Henry - <small class="text-muted">09:00 pm</small>
+                                    <br><span>Hey have you seen the latest updates on our Project Design</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="d-flex align-items-center gap-3">
+                                <img src="https://randomuser.me/api/portraits/men/3.jpg" alt="">
+                                <p class="mb-0 person_chat">Robert Fox - <small class="text-muted">11:00 am</small>
+                                    <br><span>Hey have you seen the latest updates on our Project Design</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="d-flex align-items-center gap-3">
+                                <img src="https://randomuser.me/api/portraits/women/4.jpg" alt="">
+                                <p class="mb-0 person_chat">Devon Lane - <small class="text-muted">01:00 pm</small>
+                                    <br><span>Hey have you seen the latest updates on our Project Design</span>
+                                </p>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+</body>
+
+</html>
